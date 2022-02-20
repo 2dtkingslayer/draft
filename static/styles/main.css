@@ -1,0 +1,268 @@
+*  {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 20px 40px;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    background: #F7EDE2;
+}
+
+/*map*/
+#map {
+    height: 600px;
+    width: 100%;
+    background-color: grey;
+}
+  
+/*navbar start*/
+.container-fluid{
+    background: #ffffff;
+    color: #293B61;
+}
+  
+nav .navbar-brand {
+    text-decoration: none;
+    color: #293B61;
+}
+.navbar-toggler-icon{
+    color: #293B61;
+    font-size: 40px;
+    margin-top: 10px;
+}
+.navbar-nav .nav-item .nav-link {
+    text-decoration: none;
+    color: #293B61;
+    font-weight: 500;
+    font-size: 16px;
+}
+.navbar-nav .nav-item .active{
+    color: #ff993d;
+}
+.navbar-nav .nav-item .nav-link:hover{
+    color: #ff993d;
+}
+.nav form .form-control{
+    background: white;
+    outline: none;
+}
+  
+/*navbar end*/
+   
+/*home-page start*/
+  
+#mission  {
+    color: #293B61;
+}
+  
+.homepage h6{
+    color: #3a548a;
+    padding-top: 120px;
+    font-weight: 400;
+}
+.homepage h1{
+    font-size: 45px;
+}
+.homepage p{
+    font-family: arial;
+    letter-spacing: 1px;
+    padding-top: 20px;
+    color: #3a548a;
+  }
+  
+  .btn-outline
+  {
+      color: #293B61;
+      border-color: #ff993d;
+      background-color: #ff993d;
+  }
+  
+  .btn-outline:hover
+  {
+      color: #293B61;
+      border-color: #ff993d;
+  }
+  
+  /*home-page end*/
+  
+  
+/*about-page start*/
+  
+.about  {
+      background: #FDECDC;
+}
+.about h5{
+    color: #293B61;
+    font-weight: 400;
+}
+.about .box  {
+      background: #293B61;
+      border-radius: 10px;
+  }
+  .about .row p
+  {
+      color: #ffffff;
+      font-family: arial;
+      line-height: 30px;
+      letter-spacing: 1px;
+  }
+  
+  .about h3
+  {
+      color: #ffffff;
+  }
+  @media (max-width: 770px)
+  {
+      .about .row .box
+      {
+          margin-top: 20px;
+      }
+  }
+  
+  /*about-page end*/
+  
+  
+  /*service-page start*/
+  
+  .service .box
+  {
+      background: #FDECDC; /*26243c*/
+      border-radius: 10px;
+      cursor: pointer;
+  }
+.service .box h4 ion-icon  {
+    font-size: 40px;
+    text-align: center;
+      color: #ff993d;
+      background: #293B61;
+      border-radius: 50%;
+      padding: 20px;
+      transition: 0.5s;
+  }
+  .service .box h5 ion-icon
+  {
+      font-size: 40px;
+      text-align: center;
+      color: #293B61;
+  }
+  .service .box p
+  {
+      font-size: 18px;
+      line-height: 30px;
+  }
+  .service .box:hover h4 ion-icon
+  {
+      background: #ff993d;
+      color: #293B61;
+      transform: rotate(360deg);
+  }
+  @media (max-width: 770px)
+  {
+      .service .row .box
+      {
+          margin-top: 20px;
+      }
+  }
+  
+  /*service-page end*/
+  
+  
+  /*blog-page start*/
+  
+  .blog
+  {
+      background: #FDECDC;
+  }
+  .blog .row .box
+  {
+      background: #293B61;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: 0.5s;
+      cursor: pointer;
+      color: white;
+  }
+  .blog .row .box h3
+  {
+      font-family: arial;
+      font-weight: bold;
+      transition: 0.5s;
+  }
+  .blog .row .box:hover h3
+  {
+      cursor: pointer;
+      color: #ff993d;
+  }
+  @media (max-width: 770px)
+  {
+      .blog .row .box
+      {
+          margin-top: 20px;
+      }
+  }
+  
+  /*blog-page end*/
+  
+  
+  /*contactus-page start*/
+  
+  .content-section form input
+  {
+      background: #FDECDC;
+      height: 50px;
+  }
+  .content-section form label
+  {
+      font-family: arial;
+      font-size: 18px;
+  }
+  .content-section {
+      padding: 10px 20px;
+      /* border: 1px solid #dddddd;
+      border-radius: 3px; */
+      margin-bottom: 20px;
+  }
+  
+  /* .content-section {
+      background: #ffffff;
+      padding: 10px 20px;
+      border: 1px solid #dddddd;
+      border-radius: 3px;
+      margin-bottom: 20px;
+    } */
+  
+  /*contactus-page end*/
+  
+  
+  /*footer-page start*/
+  
+  .footer
+  {
+      background: #FDECDC;
+  }
+.footer p a{
+    text-decoration: none;
+    color: #ff993d;
+    font-weight: bold;
+}
+  
+  /*footer-page end*/
+  
+  /*scroll*/
+  
+.top {
+    font-size: 50px;
+    position: fixed;
+    left: 20px;
+    color: #fff;
+    top: calc(100% - 100px);
+    border-radius: 50%;
+    transition: 0.5s;
+    opacity: 1;
+}
+.top:hover{
+    color: #fff;
+    opacity: 1;
+}
