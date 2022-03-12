@@ -57,7 +57,7 @@ nav ul{
   align-items: center;
 }
 nav li{
-  margin-left: 20px;
+    margin-left: 20px;
 }
 nav li a{
     text-transform: uppercase;

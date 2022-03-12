@@ -1,0 +1,257 @@
+:root {
+    --Color1: #FFFFFF;
+    --Color2: #000000;
+    --Color3: #6dba93;
+    --Color4: #445b51;
+    --Color5: #00ff90;
+    --Background: #C0FDFF;
+    --TitleBack: #F3C4FB;
+    --BodyBack: #FFCBF2;
+}
+
+.container-fluid{ /* entire background */
+    background-color: var(--Color1);
+    color: #141432;
+}
+
+.navbar{ /* header */
+    background-color: var(--Color1);
+}
+
+.navbar-brand, .nav-link{ /* top left corner links */
+    color: var(--Color4);
+}
+.dropdown-item{
+    color: var(--Color2);
+    background-color: var(--Color5);
+}
+.navbar-toggler{
+    background-color: #b0a1e7;
+}
+.navbar-toggler-icon{
+    background-color: #141432;
+}
+
+.card, #homepage_contact, .about_me,#objective,#my_journey{
+    background-color: #b0a1e7;
+}
+.jumbotron { /* intro */
+    background-color: var(--Color3);
+    margin: 0;
+}
+
+.card-deck {
+    padding: 30px 0 50px 0;
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+}
+
+.card {
+    width: 310px;
+}
+
+.btn {
+    background-color: #141432;
+    color: #b0a1e7;
+    border-color: #141432;
+}
+
+.form-control{
+    width: 460px; /* 460px */
+}
+#message{
+    height: 157px;
+}
+
+footer {
+    height: 50px;
+    text-align: center;
+}
+
+
+.ml-auto{
+    margin-right: 0, !important;
+}
+.navbar-nav > li{
+    padding: 0 20px;
+}
+
+.navbar img{
+    padding: 0 20px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f4effb;
+    color: #141432;
+    text-align: center;
+    padding: 10px;
+    font-size: .75rem;
+}
+
+#space_homepage, #space_aboutme, #space_contact, #space_kh, #space_resume,#space_projects{
+    height: 3em;
+    background-color: #f4effb;
+}
+/* contact */
+#contact{
+    background-color: #b0a1e7;
+    padding: 20px 50px;
+}
+
+.contact_form {
+    margin: 0 auto;
+    width: 460px;
+}
+
+.button{
+    text-align: center;
+    padding-top: 20px;
+}
+
+#contact h2{
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media only screen and (max-width: 600px) {
+    .name, .form-control, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+#homepage_contact h3{
+    text-align: center;
+}
+/* ---- extra ------ */
+.logo {
+    border-radius: 40%;
+    height: 50px;
+    width: auto;
+    cursor: pointer; /*for pointing at objects*/
+}
+
+h1 {
+    font-size: 50px;
+    color: #FFFFFF;
+    font-family: 'Modak', serif;
+}
+
+p{
+    font-size: 20px;
+    color: var(--Color1);
+    font-family: arial;
+}
+/* ----------- THANKS TO ------- */
+.section.press {
+    padding-top: 29px;
+    padding-bottom: 38px;
+    background-color: #3e5c50;
+    margin: 0 auto; /* Added */
+    float: none;
+    
+    margin-bottom: 10px;
+}
+@media screen and (max-width: 767px){
+    .section {
+        text-align: center;
+    }
+}
+
+.w-container:before, .w-container:after {
+    content: " ";
+    display: table;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-column-end: 2;
+    grid-row-end: 2;
+}
+@media screen and (max-width: 479px){
+    .w-container {
+        max-width: none;
+    }
+}
+.small-text {
+    color: hsla(0, 0%, 100%, 0.31);
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+}
+.div-block {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.logo-sponsor {
+    width: 10%;
+    height: 10%;
+    margin-right: 2%;
+    margin-left: 2%;
+    vertical-align: middle;
+    display: inline-block;
+    border: 0;
+}
+/* ------- Text and image side by side ------ */
+.w-row {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.main-feature-group {
+    margin-top: 0px;
+}
+.feature-row {
+    margin-bottom: 14px;
+}
+.w-row:before, .w-row:after {
+    content: " ";
+    display: table;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-column-end: 2;
+    grid-row-end: 2;
+}
+.w-col-6 {
+    width: 50%;
+}
+.w-col {
+    position: relative;
+    float: left;
+    /* width: 100%; */
+    min-height: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.contact-photo {
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+    border: 0;
+}
+.contact-text {
+    color: red;
+}
+@media screen and (max-width: 991px){
+    .main-feature-group {
+        margin-top: 0px;
+    }
+}

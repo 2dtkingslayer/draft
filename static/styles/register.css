@@ -1,9 +1,13 @@
-/* ===== Google Font Import - Poformsins ===== */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --HeadBar: #F6BD60;
+    --BoldLetter: #33658A;
+    --Background: #FFF7EE;
 }
 
 body{
@@ -12,28 +16,37 @@ body{
     align-items: center;
     justify-content: center;
     padding: 10px;
-    background: linear-gradient(135deg, #F7EDE2, #F6BD60);
+    background: linear-gradient(135deg, var(--Background), var(--HeadBar));
 }
 
 h1{
     margin: 0;
     padding: 0;
     font-family: 'Quicksand', sans-serif;
-    color: #33658a;
+    color: var(--BoldLetter);
+    font-size: 45px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+a{
+    color: var(--HeadBar);
+}
+p{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    color: #000000;
+    font-size: 16px;
 }
 
 .container{
     max-width: 700px;
     width: 100%;
-    background: #fff;
+    background: #FFFFFF;
     padding: 25px 30px;
     border-radius: 5px;
-}
-
-.container .title{
-    font-size: 25px;
-    font-weight: 500;
-    position: relative;
 }
 
 .container .title::before{
@@ -42,7 +55,7 @@ h1{
     left: 0;
     bottom: 0;
     height: 3px;
-    width: 30px;
+    width: 250px;
     background: linear-gradient(135deg, #F7EDE2, #F28482);
 }
 
@@ -53,10 +66,91 @@ h1{
 }
 
 form .user-details .input-box{
+    margin: 2px 0 12px 0;
     width: calc(100% / 2 - 20px);
+}
+
+.user-details .input-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
 }
 
 .user-details .input-box input{
     height: 40px;
     width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #BDB8B0;
+    padding-left: 5px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
 }
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+    border-color: #F6BD60;
+}
+
+form .gender-details .gender-title{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+form .gender-details .category{
+    display: flex;
+    width: 80%;
+    font-weight: 500;
+    background: none;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+
+.gender-details .category label{
+    display: flex;
+    align-items: center;
+}
+
+.gender-details .category .dot{
+    height: 18px;
+    width: 18px;
+    background: #F7EDE2;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: transparent solid 5px;
+    transition: all 0.3s ease; 
+}
+ #dot-1:checked ~ .category label .one,
+ #dot-2:checked ~ .category label .two,
+ #dot-3:checked ~ .category label .three{
+    border-color: #d9d9d9;
+    background: #F28482;
+}
+
+form input[type="radio"]{
+    display: none;
+}
+
+form .button{
+    height: 45px;
+    margin: 45px 0;
+}
+
+form .button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    background: linear-gradient(135deg, #BB9590, #F28482);
+}
+
+form .button input:hover{
+    background: linear-gradient(-135deg, #f5cac3, #F28482);
+}
+/* them vao ne */

@@ -21,15 +21,11 @@ h1 {
     color: var(--BoldLetter);
 }
 
-h2, h3, h4, li, input, label, button, div, p{
+h2, h3, h4, li, a, input, label, button, div, footer{
     margin: 0;
     padding: 0;
     font-family: 'Quicksand', sans-serif;
     color: #000000;
-}
-
-a{
-  color: var(--HeadBar);
 }
 
 #div3{
@@ -43,7 +39,9 @@ ul {
     font-family: 'Quicksand', sans-serif;
     color: #000000;
 }
-
+a {
+    color: #F6BD60;
+}
 nav {
     display: flex;
     justify-content: space-between;
@@ -62,11 +60,11 @@ nav li{
 nav li a{
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 0.8em;
     display: block;
     padding: 10px 16px;
     letter-spacing: 2px; 
-    color: var(--BoldLetter);
+    color: #33658a;
 }
 .btn{
   border-radius: 36px;
@@ -162,6 +160,11 @@ header .btn{
     width: 100px;
     margin: -30px auto 20px;
 }
+footer{
+    text-align: center;
+    margin-top: 120px;
+    color: #aaa;
+}
 
 .nav1 {
     display: flex;
@@ -170,14 +173,10 @@ header .btn{
     line-height: 0px;
     cursor: pointer;
 }
-.footer{
+p {
     margin: 0;
     padding: 0;
-    font-family: 'Quicksand', sans-serif;
+    font-family: sans-serif;
     color: var(--BoldLetter);
     width: 80%;
-}
-.foot-link {
-    font-family: 'Quicksand', sans-serif;
-    color: var(--BoldLetter);
 }

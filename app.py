@@ -4,7 +4,7 @@ from flask import Flask, render_template, url_for, redirect
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import UserMixin, login_user, LoginManager, login_required, logout_user, current_user
 from flask_wtf import FlaskForm
-from wtforms import StringField, PasswordField, SubmitField, FileField
+from wtforms import StringField, PasswordField, SubmitField, IntegerField
 from wtforms.validators import InputRequired, Length, ValidationError
 from flask_bcrypt import Bcrypt
 
@@ -28,8 +28,11 @@ class User(db.Model , UserMixin):
     password = db.Column(db.String(30), nullable=False)
 
 class RegisterForm(FlaskForm):
-    username = StringField(validators=[InputRequired(), Length(min=4 , max=20)], render_kw={"placeholder": "Username"})
-    password = PasswordField(validators=[InputRequired(), Length(min=4 , max=20)], render_kw={"placeholder": "Password"})
+    username = StringField(validators=[InputRequired(), Length(min=4 , max=20)])
+    password = PasswordField(validators=[InputRequired(), Length(min=4 , max=20)])
+    fullname = StringField(validators=[InputRequired(), Length(min=4 , max=30)])
+    email = StringField(validators=[InputRequired(), Length(min=4 , max=20)]);
+    phone = IntegerField(validators=[InputRequired(), Length(min=4 , max=20)]);
     submit = SubmitField("Register")
 
     def validate_username(self, username):
