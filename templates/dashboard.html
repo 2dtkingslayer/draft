@@ -1,34 +1,208 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
-    <link rel="stylesheet"
-          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-          crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../static/styles/styles.css" />
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../static/styles/mainpage.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pet World</title>
+    </head>
+    <body>
+        <div class="header">
+            <nav class="icon1">
+                <div><img class="img1" src="../static/images/logo.png" /></div>
+                <div><input class="input1" type="text" onfocus="hideIcon(this);" placeholder="Search Pet Here"/></div>  
+            </nav>
 
-    <title>Dashboard</title>
-</head>
-<body>
-    <nav class="navbar navbar-expand-md justify-content-start col-12">
-        <a class="navbar-brand" href="{{ url_for('home')}}"><img src="../static/images/logo.png" height=70 alt = "logo"></a>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav ml-auto"
-                <li class="nav-item">
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="{{ url_for('profile')}}">Profile</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="{{ url_for('login')}}">Logout</a>
-                </li>
-            </ul>
+            <nav class="black">
+                <div class="black1"><img class="profile" src="../static/images/trang.png" /><span id="prof">Trang Dang</span></div>
+                <div class="black1"><a class="black2" href="{{url_for('login')}}"/>LOGOUT</a></div>
+            </nav>
         </div>
-    </nav>
+        <div class="left">
+            <div class="div" id="div-id">
+                <div class="div" id="covid"><img class="side" src="../static/images/home.png" /><a class="nav-link" href="{{url_for('dashboard')}}">Main Page</a></div>
+                <div class="div" id="covid"><img class="side" src="../static/images/profile.png" /><a class="nav-link" href="{{url_for('profile')}}">Profile</a></div>
+                <div class="div" id="covid"><img class="side" src="../static/images/camera.png" /><a class="nav-link" href="{{url_for('profile')}}">Photos</a></div>
+                <div class="div" id="covid"><img class="side" src="../static/images/partners.png"/><a class="nav-link" href="{{url_for('profile')}}">Partners</a></div>
+                <div class="div" id="covid"><img class="side" src="../static/images/group.png"/><a class="nav-link" href="{{url_for('profile')}}">Groups</a></div>
+                <div class="div" id="covid"><img class="side" src="../static/images/vaccine.png"/><a class="nav-link" href="{{url_for('profile')}}">Veterinary Center</a></div>
+                <div class="div" id="covid"><img class="side" src="../static/images/event.png"/><a class="nav-link" href="{{url_for('profile')}}">Events</a></div>
+                <div class="see-more">See More ></div>
+            </div> <hr>
 
-    <h1>Hello you are logged in.</h1>
-</body>
+            <aside class="navigate">
+                <nav class="nav">
+                    <p> Privacy</p>
+                    <p> · Terms</p>
+                    <p> · Advertising</p>
+                    <p> · Ad Choice</p>
+                </nav>
+
+                <nav class="nav">
+                    <p>Cookies</p>
+                    <p>· More </p>
+                    <p>· 2DT © 2022 ·</p>
+                </nav>
+            </aside>
+        </div>
+
+        <main class="main">
+            <article id="main">
+                <article class="article1">
+                    <div class="row2" id="row2">
+                        <div class="row2"><img class="profile" src="../static/images/trang.png" /></div>
+                        <div><input class="input2" type="textarea" placeholder="What's on your mind, Trang?" /></div>
+                    </div>
+            
+                    <div class="up">
+                        <p class="up1"><img id="up" src="../static/images/Photo.png"/>Photo/Video</p>
+                        <p class="up1"><img id="up" src="../static/images/Smiley.jpeg"/>Feeling/Activity</p>
+                    </div>
+                </article>
+    
+                <article class="article2">
+                    <div class="post">
+                        <div><img class="profile" src="../static/images/trang.png" /></div>
+                        
+                        <aside id="aside0">
+                            <div class="donald">Trang Đặng</div>
+                            <div class="notification">
+                                <div class="hour">1 min ago</div>
+                                <div><img id="notify" src="../static/images/notification.jpeg" /></div>
+                            </div>
+                        </aside>
+                        <div class="updated">posted a picture</div>
+                    </div>  
+    
+                    <div class="pix"><img src="../static/images/logo.png" class="trump"/></div>
+                    <div class="result">
+                        <div class="border1">
+                            <div class="well">
+                                <div><img id="like1" src="../static/images/like.jpeg" /><span class="num1">10M</span></div>
+                                <div class="num2">900912 Comments</div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="action">
+                        <div class="border">
+                        <div class="like" onclick="className='click like';" ondblclick="className='dblclick like';"><img id="like" src="../static/images/like.png" /><span id="span">Like</span></div>  <!-- onclick="className='click like';": event attribute to give characteristics when clicked -->
+                        <div class="comment"><img id="comment" src="../static/images/comment.png" /><span id="span">Comment</span></div>
+                        <div class="share"><img id="share" src="../static/images/share.jpeg" /><span id="span"> Share</span></div>
+                        </div>
+                    </div>
+    
+                    <div class="replies">
+                        <div><img class="profile" src="../static/images/bts.jpeg" /></div>
+                            <aside class="aside2">
+                                <div class="donald1">BTS Kim Taehyung</div>
+                                <div class="updated1">Son of bitch.</div>
+                                <div class="react">
+                                    <div class="dot" onclick="className='click dot';" ondblclick="className='dblclick1 dot';">Like</div>
+                                    <div class="dot0">·</div>
+                                    <div class="dot">Reply</div>
+                                    <div class="dot0">·</div>
+                                    <div class="dot1">16h</div>
+                                </div>
+                            </aside>
+                    </div>
+                    
+                    <div id="row3">
+                        <div class="row3">
+                            <div class="row3"><img class="profile" src="../static/images/trang.png" /></div>
+                            <div><input class="input4" type="textarea" placeholder="Write a comment..." /></div>
+                        </div>
+                    </div>
+    
+                    <div class="divp">Press Enter to post</div>
+                </article> <br>
+    
+                <article class="article2">
+                    <div class="post">
+                        <div><img class="profile" src="../static/images/2dt.jpeg" /></div>
+    
+                        <aside id="aside0">
+                            <div class="donald">Trường Đặng</div>
+                            <div class="notification">
+                                <div class="hour">12h.</div>
+                                <div><img id="notify" src="../static/images/notification.jpeg" /></div>
+                            </div>
+                        </aside>
+    
+                        <div class="updated">posted a picture</div>
+                    </div>  
+    
+                    <div class="pix"><img src="../static/images/truongvsnhu.jpeg" class="trump"/></div>
+                    <div class="result">
+                        <div class="border1">
+                            <div class="well">
+                                <div><img id="like1" src="../static/images/like.jpeg" /><span class="num1">11M</span></div>
+                                <div class="num2">2 Comments</div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="action">
+                        <div class="border">
+                        <div class="like" onclick="className='click like';" ondblclick="className='dblclick like';"><img id="like" src="../static/images/like.png"/><span id="span">Like</span></div>
+                        <div class="comment"><img id="comment" src="../static/images/comment.png" /><span id="span">Comment</span></div>
+                        <div class="share"><img id="share" src="../static/images/share.jpeg" /><span id="span">Share</span></div>
+                        </div>
+                    </div>
+    
+                    <div class="replies">
+                        <div><img class="profile" src="../static/images/tnhu.jpeg" /></div>
+    
+                            <aside class="aside2">
+                                <div class="donald1">Tuyết Như</div>
+                                <div class="updated1">Em yêu anh</div>
+                                <div class="react">
+                                    <div class="dot" onclick="className='click dot';" ondblclick="className='dblclick1 dot';">Like</div>
+                                    <div class="dot0">·</div>
+                                    <div class="dot">Reply </div>
+                                    <div class="dot0">·</div>
+                                    <div class="dot1">12h</div>
+                                </div>
+                            </aside>
+                    </div>
+    
+                    <div id="row3">
+                        <div class="row3">
+                            <div class="row3"><img class="profile" src="../static/images/trang.png" /></div>
+                            <div><input class="input4" type="textarea" placeholder="Write a comment..." /></div>
+                        </div>
+                    </div>
+    
+                    <div class="divp">Press Enter to post</div>
+                </article> <br>
+                
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><hr>
+                
+                <nav class="nav1">
+                    <p> Privacy</p>
+                    <p> · Terms</p>
+                    <p> · Advertising</p>
+                    <p> · Ad Choice</p>
+                </nav>
+    
+                <nav class="nav1">
+                    <p>Cookies</p>
+                    <p>· More </p>
+                    <p>· Toby's Facebook © 2020 ·</p>
+                </nav>
+    
+            </article>
+        </main>
+
+        <div class="right">
+            <div class="rite" id="rite">
+                <div class="wright" id="wright"><img class="side" src="../static/images/tnhu.jpeg" /><span id="side">Tuyết Như</span></div>
+                <div class="wright" id="wright"><img class="side" src="../static/images/2dt.jpeg" /><span id="side">Trường Đặng</span></div>
+                <div class="wright" id="wright"><img class="side" src="../static/images/hang.png" /><span id="side">Hằng Nguyễn</span></div>
+                <div class="wright" id="wright"><img class="side" src="../static/images/vu.png" /><span id="side">Thuỵ Vũ</span></div>
+            </div>
+        </div>
+        
+        <div class="white"><img id="white" src="../static/images/chat.png"/></div>
+    </body>
 </html>

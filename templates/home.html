@@ -4,11 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <link rel="stylesheet"
-          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-          crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../static/styles/styles.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../static/styles/home.css" />
 
     <title>Pet's Tinder</title>
 </head>
@@ -22,14 +19,14 @@
                 <a class="navbar-brand" href="{{ url_for('home')}}"><img src="../static/images/logo.png" height=70 alt = "logo"></a>
 
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                    <ul class="navbar-nav ml-auto"
+                    <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="{{ url_for('home')}}">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link"  href="{{ url_for('login')}}">Register/Login</a>
+                            <a class="nav-link" href="{{url_for('login')}}">Register / Login</a>
                         </li>
                     </ul>
                 </div>

@@ -1,43 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
     <link rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
           crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../static/styles/styles.css" />
-
-    <title>REGISTER</title>
+    <link rel="stylesheet" type="text/css" href="../static/styles/register.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
 </head>
-
 <body>
-    <nav class="navbar navbar-expand-md justify-content-start col-12">
-        <a class="navbar-brand" href="{{ url_for('home')}}"><img src="../static/images/logo.png" height=70 alt = "logo"></a>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav ml-auto"
-                <li class="nav-item">
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="{{ url_for('home')}}">Home</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <h1 style="text-align:center">Register Page</h1>
-    <br>
-    <form method="POST" action="">
-        {{form.hidden_tag()}}
-        {{form.username}}
-        {{form.password}}
-        {{form.submit}}
-    </form>
-    <br>
-    <p style="text-align:center">Already have an account ? <a href="{{url_for('login')}}">Sign in</a> !</p>
+    <div class="container">
+        <h1 class="title">Registration</h1>
+        <hr>
+        <form method="POST" action="#">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">Full Name</span>
+                    <input type="text" placeholder="Enter your name" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Username</span>
+                    <input type="text" placeholder="Enter your username" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Email</span>
+                    <input type="email" placeholder="Enter your email" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Phone Number</span>
+                    <input type="number" placeholder="Enter your number" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Password</span>
+                    <input type="password" placeholder="Enter your password" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Confirm Password</span>
+                    <input type="password" placeholder="Enter your password again" required>
+                </div>
+            </div>
+            <div class="gender-details">
+                <input type="radio" name="gender" id="dot-1">
+                <input type="radio" name="gender" id="dot-2">
+                <input type="radio" name="gender" id="dot-3">
+                <span class="gender-title">Gender</span>
+                <div class="category">
+                    <label for="dot-1">
+                        <span class="dot one"></span>
+                        <span class="gender">Male</span>
+                    </label>
+                    <label for="dot-2">
+                        <span class="dot two"></span>
+                        <span class="gender">Female</span>
+                    </label>
+                    <label for="dot-3">
+                        <span class="dot three"></span>
+                        <span class="gender">Prefer not to say</span>
+                    </label>
+                </div>
+            </div>
+            <div class="button">
+                <input type="submit" value="Register">
+            </div>
+        </form>
+        <hr>
+        <p class="final" style="text-align:center">Already have an account ? <a href="{{url_for('login')}}">Sign in</a> !</p>
+    </div>
 </body>
 </html>
-

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pet's Tinder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+          crossorigin="anonymous">
+    <link href="../static/styles/home3.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Modak" rel="stylesheet">
+</head>
+
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <nav class="navbar navbar-expand-md
+                    justify-content-start
+                    col-12">
+            <!-- Brand -->
+            <a class="navbar-brand" href="{{url_for('home3')}}"><img class="logo" src="../static/images/logo.png"></a>
+            <!-- Responsive Button for the smaller menu -->
+            <button class="navbar-toggler" type="button"
+                    data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{url_for('home3')}}">Home</a>
+                    </li>
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" id="navbardrop" data-toggle="dropdown">
+                            About
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="https://www.linkedin.com/in/vanshika-agrawal-b51692223/">Vanshika Agrawal</a>
+                            <a class="dropdown-item" href="https://www.linkedin.com/in/2dt/">Truong Dang</a>
+                        </div>
+                    </li>
+                    <!-- Links -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{url_for('login')}}">Sign In</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="col-12 jumbotron">
+            <h1>Welcome to PET'S TINDER</h1>
+            <p>Information about the project, website.</p>
+            <p>WHAT ? WHY ? WHO ?</p>
+            <p>Pet's Tinder web application is built by Vanshika Agrawal and Truong Dang.</p>
+        </div>
+        <div class="section press">
+            <div class="w-container">
+                <div class="small-text">THANKS TO</div><br>
+                <div class="div-block">
+                    <img src="../static/images/njitlogo.png" alt="" class="logo-sponsor">
+                    <img src="../static/images/GDSClogo.png" alt="" class="logo-sponsor">
+                </div>
+            </div>
+        </div>
+
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body text-center">
+                    <h4>About Me</h4><br>
+                    <p class="card-text">I am currently a freshman at the New Jersey Institute of Technology in the United States. My major is Business and Information Systems, and I want to apply my technical knowledge to devise business solutions. </p><br>
+                    <a href="pages/aboutme.html" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body text-center">
+                    <h4>Projects</h4><br>
+                    <p class="card-text">Livre -
+                        A project that controls import and export operations; stores and manages data of customers and suppliers; revise effective business strategy based on profit and revenue data visualization of the stores.</p><br>
+                    <a href="pages/projects.html" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body text-center">
+                    <h4>Knowledge Hub</h4><br>
+                    <p class="card-text">
+                        Effectively Using Matplotlib - Chris Moffitt.
+                        The python visualization world can be a frustrating place for a new user. There are many different options and choosing the right one is a challenge.</p><br>
+                    <a href="pages/knowledge_hub.html" class="btn">See More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid" id="homepage_contact">
+    <br>
+    <h3>Contact Us</h3>
+</div>
+
+<div id="features" class="section">
+    <div class="w-container">
+        <h2>Sync Across All Devices</h2>
+        <div class="section-subtitle">Everything you need to make your business grow <strong class="bold-text">super fast</strong>!</div>
+        <div class="feature-row w-row">
+            <div class="w-col w-col-6">
+                <img src="../static/images/vanshika.png" alt="" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); opacity: 1; transform-style: preserve-3d;" sizes="(max-width: 767px) 96vw, (max-width: 991px) 354px, 460px" data-ix="fade-in-on-scroll" data-w-id="ae6d3e74-cad2-e25b-7307-64469019de8a" srcset="https://assets.website-files.com/5e4b18d10b25ed7c5a4d7453/5e4b18d10b25ed985b4d747a_Metric-screenshot2-p-500x320.png 500w, https://assets.website-files.com/5e4b18d10b25ed7c5a4d7453/5e4b18d10b25ed985b4d747a_Metric-screenshot2-p-800x512.png 800w, https://assets.website-files.com/5e4b18d10b25ed7c5a4d7453/5e4b18d10b25ed985b4d747a_Metric-screenshot2.png 814w"></div>
+                <div class="w-col w-col-6">
+                    <div class="main-feature-group">
+                        <img src="https://assets.website-files.com/5e4b18d10b25ed7c5a4d7453/5e4b18d10b25ed3d464d7465_iconmonstr-laptop-2-icon.svg" height="30" alt="" class="feature-icon">
+                        <h3>Web Application</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.&nbsp;Consectetur adipiscing elit.</p>
+                    </div>
+                </div></div><div class="feature-row w-row"><div class="w-col w-col-6"><div class="main-feature-group"><img src="https://assets.website-files.com/5e4b18d10b25ed7c5a4d7453/5e4b18d10b25edd11a4d747b_iconmonstr-download-13-icon.svg" height="30" alt="" class="feature-icon"><h3>Mobile App</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.&nbsp;Consectetur adipiscing elit.</p></div></div><div class="w-col w-col-6"><img src="https://assets.website-files.com/5e4b18d10b25ed7c5a4d7453/5e4b18d10b25ed61054d7490_Metric-screenshot-phone.png" alt="" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); opacity: 1; transform-style: preserve-3d;" sizes="(max-width: 767px) 96vw, (max-width: 991px) 354px, 460px" data-ix="fade-in-on-scroll" data-w-id="29859a3f-acf5-87fb-9a1d-59628b5d3fbf" srcset="https://assets.website-files.com/5e4b18d10b25ed7c5a4d7453/5e4b18d10b25ed61054d7490_Metric-screenshot-phone-p-500x243.png 500w, https://assets.website-files.com/5e4b18d10b25ed7c5a4d7453/5e4b18d10b25ed61054d7490_Metric-screenshot-phone-p-800x389.png 800w, https://assets.website-files.com/5e4b18d10b25ed7c5a4d7453/5e4b18d10b25ed61054d7490_Metric-screenshot-phone.png 1000w"></div></div><div class="small-features-row w-row"><div class="w-col w-col-3"><div class="feature"><img src="https://assets.website-files.com/5e4b18d10b25ed7c5a4d7453/5e4b18d10b25ed6db44d7473_iconmonstr-control-panel-icon.svg" height="30" alt="" class="feature-icon"><h3>Dashboard</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.&nbsp;</p></div></div><div class="w-col w-col-3"><div class="feature"><img src="https://assets.website-files.com/5e4b18d10b25ed7c5a4d7453/5e4b18d10b25ed67164d747f_iconmonstr-sitemap-7-icon.svg" height="30" alt="" class="feature-icon"><h3>Custom Rules</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.&nbsp;</p></div></div><div class="w-col w-col-3"><div class="feature"><img src="https://assets.website-files.com/5e4b18d10b25ed7c5a4d7453/5e4b18d10b25ed497e4d7467_iconmonstr-save-9-icon.svg" height="30" alt="" class="feature-icon"><h3>Presets</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.&nbsp;</p></div></div><div class="w-col w-col-3"><div class="feature"><img src="https://assets.website-files.com/5e4b18d10b25ed7c5a4d7453/5e4b18d10b25ed6ef14d745f_iconmonstr-bar-chart-4-icon.svg" height="30" alt="" class="feature-icon"><h3>Metrics</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.&nbsp;</p></div></div></div></div></div>
+
+<div class="container-fluid" id="space_homepage"></div>
+<div class="container-fluid">
+    <footer class="footer page-footer font-small ">
+        <div class="container">
+            <div class="row">
+                <span class="text-muted">&copy;Pet's Tinder, 2022 | Support Us | Terms Of Use | Privacy</span>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+</html>
